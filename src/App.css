@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+/* Container */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h1 {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 30%;
+  font-size: 50px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #218838;
+}
+/* Popup Styles */
+.popup-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup-content {
+  text-align: center;
+  background-color: #e8f5e9; /* Light green background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  max-width: 400px; /* Appropriate size */
+  margin: auto;
+}
+
+.popup-content p {
+  font-size: 1.5em;
+  color: #2e7d32; /* Dark green text */
+}
+
+.popup-content h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #1b5e20; /* Darker green for heading */
+}
+
+.popup-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745; /* Button green */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.popup-content a button {
+  background-color: #2e7d32; /* Dark green for link button */
+}
+
+.popup-content a button:hover {
+  background-color: #1b5e20; /* Darker green on hover */
 }

@@ -1,24 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import Handcricket from './components/HandCricket.js'
+import Toss from './components/Toss.js';
+import { Route,  BrowserRouter, Routes } from 'react-router-dom';
+import Bat from './components/Bat.js';
+import Ball from './components/Ball.js';
+import Practise from './components/Practise.js';
+import Home from './components/Home.js';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+ 
+ <BrowserRouter>
+  <Routes>
+  <Route path='/' element={<Home />}/>
+    <Route path='/toss' element={<Toss />}/>
+    <Route path='/play' element={<Handcricket />}/>
+    <Route path='/batting' element={<Bat />}/>
+    <Route path='/balling' element={ <Ball /> }/>
+    <Route path='/practise' element={ <Practise /> }/>
+    
+  </Routes>
+ </BrowserRouter>
+
+
+
+
+    </>
   );
 }
 
